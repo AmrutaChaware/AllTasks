@@ -98,7 +98,7 @@ Multiplication is 30
 10
 20
 
-2. MultiLevel Inheritance :
+3. Hierarchical Inheritance :
 
 class Hierarchi1 
 { 
