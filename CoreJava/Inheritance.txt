@@ -1,0 +1,157 @@
+1. Single Level Inheritance :
+
+class Single1{
+	int a=10;
+	int b=20;
+	
+	public void addition()
+	{
+		int c=a+b;
+		System.out.println("Addition is : "+c);
+	}
+	public void substraction()
+	{
+		int c=a-b;
+		System.out.println("substraction is : "+c);
+	}
+}
+
+class Single2 extends Single1{
+	
+	int x=10,y=10;
+	int z=x*y;
+	public void addition()
+	{
+		Single1 s1 = new Single1();
+		s1.addition();
+		System.out.println("Multiplication is : "+z);
+	}
+	
+}
+
+
+public class SingleLevel {
+
+	public static void main(String[] args) 
+	{
+		Single2 s2 = new Single2();
+		s2.addition();
+		s2.substraction();
+
+	}
+
+}
+
+OUTPUT :
+
+Addition is : 30
+Multiplication is : 100
+substraction is : -10
+
+
+2. MultiLevel Inheritance :
+
+class Multi1 {
+	int a=10;
+	public void add()
+	{
+		System.out.println("Addition is 10");
+	}
+	
+}
+
+class Multi2 extends Multi1{
+	int b=20;
+	public void Sub()
+	{
+		System.out.println("Substartiob is 20");
+	}
+	
+}
+
+class Multi3 extends Multi2{
+	public void Mul()
+	{
+		System.out.println("Multiplication is 30");
+	}
+	
+}
+
+public class MultiLevel {
+
+	public static void main(String[] args) {
+		Multi3 m3 = new Multi3();
+		m3.add();
+		m3.Sub();
+		m3.Mul();
+		System.out.println(m3.a);
+		System.out.println(m3.b);
+
+	}
+
+}
+
+OUTPUT :
+Addition is 10
+Substartion is 20
+Multiplication is 30
+10
+20
+
+2. MultiLevel Inheritance :
+
+class Hierarchi1 
+{ 
+    public void print_parent() 
+    { 
+        System.out.println("In ::Parent class"); 
+    } 
+} 
+
+
+class Hierarchi2 extends  Hierarchi1
+{ 
+    public void print_child1() 
+    { 
+        System.out.println("In ::Child1 class"); 
+    } 
+} 
+
+class Hierarchi3 extends Hierarchi1 
+{ 
+    public void print_child2() 
+    { 
+        System.out.println("In ::Child2 class"); 
+    } 
+} 
+
+class Hierarchi4 extends Hierarchi1 
+{ 
+    public void print_child3() 
+    { 
+        System.out.println("In ::Child3 class"); 
+    } 
+} 
+
+public class Hierarchical {
+
+	public static void main(String[] args) 
+	{
+		
+		Hierarchi2 ch1 = new Hierarchi2();      
+        ch1.print_child1();             
+        Hierarchi3 ch2 = new Hierarchi3();      
+        ch2.print_child2();             
+        Hierarchi4 ch3 = new Hierarchi4();      
+        ch3.print_child3();             
+        ch3.print_parent(); 
+
+	}
+
+}
+OUTPUT :
+
+In ::Child1 class
+In ::Child2 class
+In ::Child3 class
+In ::Parent class
