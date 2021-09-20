@@ -1,0 +1,47 @@
+create database `query`;
+use `query`;
+
+
+create table student(
+student_id INT, 
+    name VARCHAR(100), 
+    age INT);
+    
+CREATE TABLE Test.Student(
+    student_id INT, 
+    name VARCHAR(100), 
+    age INT);
+alter table student add (address varchar(600));
+alter table student add(
+father_name varchar(60),
+DOB date);
+alter table student drop column father_name ;
+alter table student add address varchar(600) default 'pune';
+alter table student change column  address  location int(50);
+drop table student;
+
+
+
+
+insert into student values(101, 'Harshada',18),
+(102,'shital',19),
+(103,'alisha',18);
+insert into student(student_id,name) values(104,'Payal');
+insert into student values (105,'akanksha',default);
+
+select* from Student;
+update  student set age=20 where  student_id=104;
+update student set name='shruti',age=19 where student_id=104;
+update student set age=age+1;
+
+alter table student add (salary int(10)); 
+insert into student(salary) values (30000),(10000),(40000),(11000),(35000);
+ALTER TABLE student DROP salary;
+
+update student set salary=35000 where student_id=101 ;
+update student set salary=10000 where student_id=102;
+update student set salary=45000 where student_id=103;
+update student set salary=5000 where student_id=104;
+update student set salary=50000 where student_id=105;
+select student_id,name,age,salary+30000 from student;
+select student_id,name,age from student;
