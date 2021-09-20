@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index.css">
+  <style>
+    body {
+      font-family: Calibri, Helvetica, sans-serif;
+      background: url(../images/background.jpg) no-repeat;
+      background-size: cover;
+    }
+
+    .container {
+      padding: 105px;
+      color: white;
+    }
+
+    input[type=text],
+    input[type=password],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: white;
+    }
+
+    input[type=password]:focus {
+      background-color: white;
+      outline: none;
+    }
+
+    div {
+      padding: 10px 0;
+    }
+
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+
+    .registerbtn {
+      background-color: #668245;
+      color: white;
+      padding: 16px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+
+    }
+
+    .registerbtn:hover {
+      background-color: red;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- Navbar Start -->
+  <nav id="navbar">
+    <div id="logo">
+      <img src="images/logo.png" alt="Mylogo">
+    </div>
+
+    <ul>
+      <li class="item"><a href="index.html">Home</a></li>
+      <li class="item"><a href="services.html">Services</a></li>
+      <li class="item"><a href="aboutus.html">About Us</a></li>
+      <li class="item"><a href="Contactus.html">Contact Us</a></li>
+
+    </ul>
+  </nav><!-- Navbar End -->
+  <form>
+    <div class="container">
+      <center>
+        <h1> Student Registeration Form</h1>
+      </center>
+      <hr>
+      <label> Firstname </label>
+      <input type="text" name="firstname" placeholder="Firstname" size="15" required />
+
+      <label> Middlename: </label>
+      <input type="text" name="middlename" placeholder="Middlename" size="15" required />
+
+      <label> Lastname: </label>
+      <input type="text" name="lastname" placeholder="Lastname" size="15" required />
+
+      <!-- <div>
+        <label>
+          Course :
+        </label>
+
+        <select>
+          <option value="Course">Course</option>
+          <option value="Database">Database</option>
+          <option value="MySQL">MySQL</option>
+          <option value="App Development">App Development</option>
+          <option value="Web Development">Web Development</option>
+          <option value="Web Designing">Web Designing</option>
+        </select>
+      </div> -->
+
+      <div>
+        <label>
+          Gender :
+        </label><br>
+        <input type="radio" value="Male" name="gender" checked> Male
+        <input type="radio" value="Female" name="gender"> Female
+        <input type="radio" value="Other" name="gender"> Other
+
+      </div>
+      <label>
+        Phone :
+      </label>
+      <input type="text" name="country code" placeholder="Country Code" value="+91" size="2" />
+      <input type="text" name="phone" placeholder="phone no." size="10" / required>
+      Current Address :
+      <textarea cols="80" rows="5" placeholder="Current Address" value="address" required>
+</textarea>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Re-type Password</b></label>
+      <input type="password" placeholder="Retype Password" name="psw-repeat" required>
+      <button type="submit" class="registerbtn">Register</button>
+  </form>
+</body>
+
+</html>
+
+
+</body>
+
+</html>
