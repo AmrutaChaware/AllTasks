@@ -1,7 +1,7 @@
 //import package for SQL
 import java.sql.*;
 
-//Creating class JDBC Connection
+//Creating class for JDBC Connection
 public class Practicing_7_JDBC_Steps {
 
 	//Main method
