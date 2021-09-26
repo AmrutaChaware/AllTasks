@@ -55,7 +55,7 @@ public class Practicing_7_JDBC_Steps {
 			   System.out.print(resultset.getString(2)+" ");
 			   System.out.print(resultset.getString(3)+"\n");
 		   }
-		   /* 6. Close Connection */
+		   /* 7. Close Connection */
 		   
 		   statement.close();
 		   connection.close();
