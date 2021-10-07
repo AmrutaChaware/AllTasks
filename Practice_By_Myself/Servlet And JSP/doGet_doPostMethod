@@ -1,1 +1,41 @@
+ 
+	Servlet is the java file which takes the request from client on the internet and it can process that request and provide response in the format of “HTML” page.
+Web-Container :- 
+have Apache Tomcat/Glass Fish/WebShere
+“TOMCAT” send request to servlet to get that “HTML” file but Servlet is “.java” file
+
+In Short :-
+•	Client send request to server(for dynamic page request)
+•	Server goes to the web container which uses web.xml file to give response in html format to client.
+HTTP Protocol Methods :
+We have 7 methods but normally we used 5 methods :
+1.	Get :- fetch data from server
+2.	Post :- send / submit data to the server
+3.	Delete
+4.	Options
+5.	Put
+•	By default we used GetRequest method in our Addition project
+Main difference between Get and Post method is :
+When we use get method
+<form action="addition" method="get">
+We get URL like :
+http://localhost:8081/ServletFirstProjectAddition/addition?number1=1&number2=2
+we can able to see what data we passed for execution
+
+When we use post method
+<form action="addition" method="post">
+We get URL like :
+http://localhost:8081/ServletFirstProjectAddition
+we are not able to see what data we passed for execution.
+It helps us to hide our data.
+AdditionServlet.java
+public class AddServlet extends HttpServlet
+{
+	public void service(HttpServletRequest request,HttpServletResponse response) 
+	{
+		
+	}
+}
+Except service() method we can use doGet()or doPost()method which is a part of public void service method.
+Without service method we cannot use Servlet.
 
