@@ -62,7 +62,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        Alean telisko = new Alean();
+        Alean telisko = null;
       
         Configuration configuration = new Configuration().configure().addAnnotatedClass(Alean.class);
        
