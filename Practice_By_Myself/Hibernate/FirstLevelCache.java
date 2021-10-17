@@ -1,5 +1,6 @@
 /* FirstLevelCache.java */
-
+//First Level Cache info is available for only One session(one session one cache)
+//Second Level Cache info is available for more than One session(multiple session one second cahe)
 public class App 
 {
     public static void main( String[] args )
