@@ -1,6 +1,6 @@
 /* FirstLevelCache.java */
-//First Level Cache info is available for only One session(one session one cache)
-//Second Level Cache info is available for more than One session(multiple session one second cahe)
+//First Level Cache info is available for only One session(one session one cache):This one is default chache provided by Hibernate
+//Second Level Cache info is available for more than One session(multiple session one second cahe) : We need to configure Second level cache using ehChache :pom.xml,hibernate.cfg.xml,Entity:@cahable,@cache
 public class App 
 {
     public static void main( String[] args )
